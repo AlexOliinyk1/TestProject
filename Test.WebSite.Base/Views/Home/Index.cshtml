@@ -1,0 +1,20 @@
+﻿@using Test.WebSite.Base.Helpers
+ 
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- modal placeholder-->
+<div id='myModal' class='modal fade in' >
+    <div class="modal-dialog" style='margin-top: 100px; '>
+        <div class="modal-content">
+            <div id='myModalContent'></div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12" id="replacetarget">
+        @{ Html.RenderAction("Index", "Album"); }
+    </div>
+</div>
